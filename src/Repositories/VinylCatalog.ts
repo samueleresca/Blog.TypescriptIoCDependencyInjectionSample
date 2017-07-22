@@ -4,13 +4,14 @@ import { Track } from "../Models/Track";
 
 export class VinylCatalog implements IMusicRepository{
 
-    public vinylList : Track[] = new Array(
+    private vinylList : Track[] = new Array(
         new Track(1, "DNA.", "Kendrick Lamar", 340),
         new Track(2, "Come Down", "Anderson Paak.", 430),
         new Track(3, "DNA.", "Kendrick Lamar", 340),
         new Track(4, "DNA.", "Kendrick Lamar", 340),
         new Track(5, "DNA.", "Kendrick Lamar", 340)
     );
+    
     
     get(): Track[] {
         return this.vinylList;
