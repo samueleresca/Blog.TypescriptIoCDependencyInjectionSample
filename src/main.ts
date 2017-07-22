@@ -1,6 +1,6 @@
 import {IMusicRepository} from "./Repositories/IMusicRepository";
 import container from "./Infrastructure/Installer";
-import SERVICE_IDENTIFIER from "./Constants/Types";
+import SERVICE_IDENTIFIER from "./Constants/Identifiers";
 import { MusicCatalogService } from '../src/Services/MusicCatalogService';
 
 
@@ -9,3 +9,4 @@ let musicRepoo = container.get<IMusicRepository>(SERVICE_IDENTIFIER.IMusicReposi
 let service= new MusicCatalogService(musicRepoo);
 
 console.log(service.get());
+

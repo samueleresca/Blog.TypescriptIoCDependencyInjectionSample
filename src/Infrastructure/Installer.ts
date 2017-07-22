@@ -1,7 +1,7 @@
 import "reflect-metadata";
 import { Container } from "inversify";
 
-import SERVICE_IDENTIFIER from "../Constants/Types";
+import SERVICE_IDENTIFIER from "../Constants/Identifiers";
 import {IMusicRepository} from "../Repositories/IMusicRepository";
 import {VinylCatalog} from "../Repositories/VinylCatalog";
 
