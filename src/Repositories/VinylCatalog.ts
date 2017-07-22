@@ -1,7 +1,8 @@
 import {IMusicRepository} from "./IMusicRepository";
 import { Track } from "../Models/Track";
+import { inject, injectable, named } from "inversify";
 
-
+@injectable()
 export class VinylCatalog implements IMusicRepository{
 
     private vinylList : Track[] = new Array(
@@ -12,7 +13,7 @@ export class VinylCatalog implements IMusicRepository{
         new Track(5, "DNA.", "Kendrick Lamar", 340)
     );
     
-    
+
     get(): Track[] {
         return this.vinylList;
     }

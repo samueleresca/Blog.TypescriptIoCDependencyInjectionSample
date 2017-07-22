@@ -1,7 +1,9 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const tslib_1 = require("tslib");
 const Track_1 = require("../Models/Track");
-class VinylCatalog {
+const inversify_1 = require("inversify");
+let VinylCatalog = class VinylCatalog {
     constructor() {
         this.vinylList = new Array(new Track_1.Track(1, "DNA.", "Kendrick Lamar", 340), new Track_1.Track(2, "Come Down", "Anderson Paak.", 430), new Track_1.Track(3, "DNA.", "Kendrick Lamar", 340), new Track_1.Track(4, "DNA.", "Kendrick Lamar", 340), new Track_1.Track(5, "DNA.", "Kendrick Lamar", 340));
     }
@@ -27,6 +29,9 @@ class VinylCatalog {
             return null;
         return this.vinylList.splice(targetIndex, 1)[0];
     }
-}
+};
+VinylCatalog = tslib_1.__decorate([
+    inversify_1.injectable()
+], VinylCatalog);
 exports.VinylCatalog = VinylCatalog;
 //# sourceMappingURL=VinylCatalog.js.map
