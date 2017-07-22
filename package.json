@@ -1,0 +1,36 @@
+{
+  "name": "blog-inversion-of-control-typescript",
+  "version": "0.0.0",
+  "description": "IoC and DI using Typescript Inversify and Jest",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 6.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "~20.0.2",
+    "@types/node": "~6.0.78",
+    "jest": "~20.0.0",
+    "rimraf": "~2.6.1",
+    "tslint": "~5.4.3",
+    "tslint-microsoft-contrib": "~5.0.1",
+    "tsutils": "~2.5.1",
+    "typescript": "~2.4.1"
+  },
+  "scripts": {
+    "clean": "rimraf coverage build tmp",
+    "build": "tsc -p tsconfig.release.json",
+    "watch": "tsc -w -p tsconfig.release.json",
+    "lint": "tslint -t stylish --type-check --project 'tsconfig.json'",
+    "test:watch": "jest --watch"
+  },
+  "author": "Samuele Resca ",
+  "license": "MIT",
+  "homepage": "https://samueleresca.net",
+
+  "dependencies": {
+    "express": "^4.15.3",
+    "inversify": "^4.2.0",
+    "reflect-metadata": "^0.1.10",
+    "tslib": "~1.7.1"
+  }
+}

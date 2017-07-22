@@ -1,0 +1,1 @@
+{"version":3,"file":"Track.js","sourceRoot":"","sources":["../../../src/Models/Track.ts"],"names":[],"mappings":";;AAAA;IAEI,YAAY,EAAU,EAAE,KAAa,EAAE,MAAc,EAAE,QAAe;QAClE,IAAI,CAAC,EAAE,GAAE,EAAE,CAAC;QACZ,IAAI,CAAC,KAAK,GAAE,KAAK,CAAC;QAClB,IAAI,CAAC,MAAM,GAAE,MAAM,CAAC;QACpB,IAAI,CAAC,QAAQ,GAAE,QAAQ,CAAC;IAC5B,CAAC;CAMJ;AAbD,sBAaC"}
