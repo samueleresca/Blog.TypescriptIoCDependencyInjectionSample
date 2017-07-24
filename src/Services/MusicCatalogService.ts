@@ -3,7 +3,7 @@ import { Track } from "../Models/Track";
 
 export class MusicCatalogService{
 
-    public repository: IMusicRepository;
+    private repository: IMusicRepository;
 
     constructor(repository:IMusicRepository){
         this.repository= repository;

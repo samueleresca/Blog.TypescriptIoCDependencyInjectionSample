@@ -2,8 +2,6 @@ import { MusicCatalogService } from '../src/Services/MusicCatalogService';
 import { IMusicRepository } from '../src/Repositories/IMusicRepository';
 import { Track } from '../src/Models/Track';
 
-
-
 describe('MusicCatalogService tests', () => {
 
   let sut: MusicCatalogService;
